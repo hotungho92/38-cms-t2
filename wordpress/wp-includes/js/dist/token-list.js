@@ -1,100 +1,57 @@
-this["wp"] = this["wp"] || {}; this["wp"]["tokenList"] =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 353);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 10:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _classCallCheck; });
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-MFPlat" version="6.1.7601.24382" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly dependencyType="prerequisite">
+      <assemblyIdentity name="Microsoft-Windows-MFPlat.Resources" version="6.1.7601.24382" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="mfplat.dll" destinationPath="$(runtime.system32)\" sourceName="mfplat.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">3gd9YeicCXME9nnVIHdssyubJpaqGosG3OMEOMir3bA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\MediaFoundation\Transforms\Preferred" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\MediaFoundation\Transforms\DoNotUse" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\MediaFoundation\MediaSources\Preferred" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\MediaFoundation\MediaSources\DoNotUse" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="APOProcess.EventMessage" value="APOProcess Tag=%1 Object=%2 Object Category=%3 Sample=%4 Buffer Size=%5 Sample Time=%6 Processing Time=%7" />
+        <string id="APOProcess.TaskMessage" value="APOProcess" />
+        <string id="ASFSource_Start.TaskMessage" value="ASFSource Start" />
+        <string id="ASFSource_Start_Begin.EventMessage" value="ASF Source Begin Start Tag=%1 Object=%2 Parameter=%3" />
+        <string id="ASFSource_Start_End.EventMessage" value="ASF Source End Start Tag=%1 Object=%2 Parameter=%3" />
+        <string id="Audio_Render.EventMessage" value="Audio Render Tag=%1 Object=%2 Sample=%3 Sample Time=%4 Sample Duration=lass as a function");
   }
 }
 
