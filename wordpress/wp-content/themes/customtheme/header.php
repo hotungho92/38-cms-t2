@@ -132,7 +132,6 @@
                                         <li><a href="#">Page blog 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">About</a></li>
                                 <form class="navbar-form navbar-left" action="/action_page.php">
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Search" name="search">
